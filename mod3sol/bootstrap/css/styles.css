@@ -1,10 +1,48 @@
 body {
-	color: #fff;
+	color: black;
 	font-size: 16px;
 	font-family: Helvetica, sans-serif;
 }
 
 #header-nav {
-	background-color: #ac6926;
-	border: 0;
+	padding: 0;
+}
+
+.container-fluid {
+	width: 100%;
+	background-color: #E8CBC5;
+}
+
+#collapsable-nav {
+	background-color: #FAAE9F;
+}
+
+
+#nav-list a {
+	background-color: #FAAE9F;
+	text-align: center;
+	border: black;
+}
+
+#nav-list {
+	margin-top: 0;
+	width: 100%;
+}
+
+.navbar-brand {
+	padding: 10px;
+	padding-left: 20px;
+}
+
+.navbar-brand h1 { /* Company Name */
+	color: black;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+	text-align: left;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
 }
