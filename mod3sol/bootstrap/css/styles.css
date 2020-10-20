@@ -2,6 +2,7 @@ body {
 	color: black;
 	font-size: 16px;
 	font-family: Helvetica, sans-serif;
+	box-sizing: border-box;
 }
 
 #header-nav {
@@ -46,19 +47,55 @@ nav > .container-fluid {
 	text-decoration: none;
 }
 
+button.navbar-toggler{
+	border: 2px solid red;
+}
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+	background-color: white;
+}
+
+.navbar-toggler:active, .navbar-toggler:focus, .navbar-toggler-icon:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+#collapsable-nav a {
+	border-bottom: 1px solid white;
+}
+
+/* Main Content */
+
 #main-content h1 {
 	margin-top: 20px;
 	font-size: 2.4em;
 }
 
-.col-12 {
-	border: 1px solid black;
-	height: 1000px;
-	position: relative;
-	background-color: #DCDCC3;
+.row {
+	width: 100%;
+	margin: 5px;
 }
 
-.col-12 h2 {
+.row > div {
+	float: left;
+	padding: 0;
+}
+
+h3 {
 	margin-top: 10px;
 	font-size: 1.5em;
+}
+
+.item {
+	background-color: #DCDCC3;
+	margin: 10px;
+	border: 1px solid black;
+	height: 900px;
+	position: relative;
+	overflow: auto;
+}
+
+.item a {
+	position: absolute;
+	right: 0;
 }
