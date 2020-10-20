@@ -59,5 +59,6 @@ nav > .container-fluid {
 }
 
 .col-12 h2 {
-	position: absolute;
+	margin-top: 10px;
+	font-size: 1.5em;
 }
